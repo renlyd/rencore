@@ -5,7 +5,11 @@ import java.util.HashSet;
 
 public class LineTool {
 
-    static public void example1(String[] args) {
+    static public void main(String[] args) {
+        example1();
+    }
+
+    static public void example1() {
         LineTool.Delimited tool = new LineTool.Delimited(',');
         tool.setLine("a,b,c");
         System.out.println(tool.getWord(1));
